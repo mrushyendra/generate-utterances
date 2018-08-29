@@ -1,0 +1,4 @@
+(transfer | send | give) (some (cash | money | funds) | {amount} (dollars | )) (to {recipient} | ) (from {account} (account | )) ({now} | )
+(transfer | send | give) to {recipient} (some (cash | money | funds) | {amount} (dollars | )) (from {account} (account | )) ({now} | )
+((please | ) do a | ) funds transfer
+
