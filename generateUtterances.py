@@ -77,6 +77,13 @@ def splitParen(string):
     parts.append(part)
     return parts
 
+#given a string with trailing '*', returns array with original string and 'plural' form
+def expandOptionalStr(string):
+    if not string[string.len()] == '*':
+        return [string]
+    else:
+        return [string, string+"s"]
+
 parser = ArgumentParser()
 parser.add_argument("inputStrFile", type=str, help="Path to file that contains the input sentence", metavar="inputStrFileName")
 parser.add_argument("outputFile", type=str, help="Path to file where utterances will be written to", metavar="outputFileName")
